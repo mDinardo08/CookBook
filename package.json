@@ -8,8 +8,8 @@
     "start": "ng serve --extract-css",
     "build": "ng build --extract-css --prod",
     "build:ssr": "npm run build -- --app=ssr --output-hashing=media",
-    "test": "ng test --browsers ChromeHeadless --single-run true",
-    "testDebug": "ng test --browsers Chrome",
+    "test": "ng test --browsers ChromeHeadless",
+    "testDebug": "ng test --browsers Chrome --watch=true",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

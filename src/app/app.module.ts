@@ -22,7 +22,7 @@ import * as Services from './services/services.module';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    Services.ApiService, Services.PageService
+    Services.ApiService, Services.PageService, Services.ResponseService
   ],
   bootstrap: [AppComponent]
 })

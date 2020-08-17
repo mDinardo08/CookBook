@@ -1,14 +1,11 @@
 import { Response } from "../../logical/response/response";
-import { ResponseService } from "./response";
 
-describe("Response service", () => {
+describe("Response", () => {
 
     let service;
 
     beforeEach(() => {
-        service = new ResponseService();
+        service = new Response();
     });
-
-    
 
 });

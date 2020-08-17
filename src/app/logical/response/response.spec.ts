@@ -1,6 +1,6 @@
-import { Response } from "../../logical/response/response";
+import { Response } from '../../logical/response/response';
 
-describe("Response", () => {
+describe('Response', () => {
 
     let service;
 

@@ -1,4 +1,5 @@
 import { ApiService } from './api.service';
+import { Response } from '../../logical/logical.services.module';
 
 describe('Api Service', () => {
 
@@ -21,5 +22,12 @@ describe('Api Service', () => {
         service.get('Specific website');
         expect(mockHttp.get).toHaveBeenCalledWith('Specific website');
     });
+
+    it('Will return the Observable from the Http call wraped in a Response', () => {
+        const mockHttp = jasmine.createSpyObj('HttpClient', ['get']);
+        service = new ApiService(mockHttp);
+        expect(service.get<null>('something')).toEqual(jasmine.any(Response));
+    });
+
 
 });

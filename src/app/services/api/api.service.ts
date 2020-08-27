@@ -2,9 +2,15 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Response } from '../../logical/logical.services.module';
 
-@Injectable()
 
-export class ApiService {
+export abstract class GetService {
+
+    abstract get<T>(url: string): Response<T>;
+
+}
+
+@Injectable()
+export class ApiService implements GetService {
 
     constructor(private http: HttpClient) {}
 

@@ -9,6 +9,10 @@ export abstract class GetService {
 
 }
 
+export abstract class PostService {
+    abstract post(): void;
+}
+
 @Injectable()
 export class ApiService implements GetService {
 

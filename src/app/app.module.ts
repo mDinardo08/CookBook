@@ -11,13 +11,15 @@ import { AppRoutingModule } from './app-routing.module';
 import * as Services from './services/services.module';
 import { ApiService } from './services/services.module';
 import { GetService } from './services/services.module';
+import { FooterComponentModule } from './components/footer/footer.component.module';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    FooterComponentModule
   ],
   providers: [
     StatusBar,

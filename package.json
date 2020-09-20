@@ -5,7 +5,7 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --extract-css",
+    "start": "ng serve",
     "build": "ng build --extract-css --prod",
     "build:ssr": "npm run build -- --app=ssr --output-hashing=media",
     "test": "ng test --watch=false --browsers ChromeHeadless",

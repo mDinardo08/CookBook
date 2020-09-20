@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./components/list/list.module').then(m => m.ListPageModule)
+  },
+  {
+    path: 'footer',
+    loadChildren: () => import('./components/footer/footer.component.module').then(m => m.FooterComponentModule)
   }
 ];
 

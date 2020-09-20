@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
-import { NgxBootstrapIconsModule, Person } from 'ngx-bootstrap-icons';
+import { NgxBootstrapIconsModule, Person, ThreeDotsVertical } from 'ngx-bootstrap-icons';
 
 import { FooterComponent } from './footer.component';
 
@@ -14,7 +14,7 @@ import { FooterComponent } from './footer.component';
       }
     ]),
     IonicModule,
-    NgxBootstrapIconsModule.pick({ Person })
+    NgxBootstrapIconsModule.pick( { ThreeDotsVertical } )
   ],
   declarations: [FooterComponent],
   exports: [FooterComponent]
